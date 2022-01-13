@@ -12,6 +12,9 @@ let a7;
 for ( let i = 0; i < 7; i++) {
     a1 = "*";
     for (let j = 0; j < i; j++) {
+        if ( j === 5 ) {
+            break;
+        }
         a1 += " ";
     }
     a2 = "";
@@ -31,7 +34,11 @@ for ( let i = 0; i < 7; i++) {
         a5 = "*";
     }
     a6 = "";
+    aSixEnd = i; 
     for (let o = 0; o < i; o++) {
+        if ( o === 4) {
+            break;
+        }
         a6 += " ";
     }
     a7 = "*";

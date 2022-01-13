@@ -1,7 +1,6 @@
 
 let n = Number(prompt("Введите высоту ёлки:"));
 let elka = "";
-let vetka1 = "/";
 let vetka2 = "\\";
 
 for(i = 1; i <= n; i++) {

@@ -1,0 +1,28 @@
+#img {
+    background-image: url(./img/bulb_off.png);
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+#toggle {
+    height: 50px;
+    width: 200px;
+    border: 1px solid grey;
+    border-radius: 40px;
+    margin-left: 80px;
+    background-color: green;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+}
+
+
+#inner-toggle {
+    height: 47px;
+    width: 100px;
+    border: 1px solid grey;
+    border-radius: 40px;
+    background-color: rgb(219, 216, 216);
+}
+
+#toggle:hover {
+    cursor: pointer;
+}

@@ -1,20 +1,25 @@
 let arr = [1, [2, 7, 8], [3, 4, [5, [6, 7]]]];
 
 // Вариант №1
-let newArr = arr.flat(Infinity);
+// let newArr = arr.flat(Infinity);
 
-console.log(newArr);
+// console.log(newArr);
 
 
 // Вариант №2
-// function newArr(arr) {
-//     for ( let elem of arr ) {
-//         if ( typeof elem == "object") {
-//             newArr(elem);
-//         } else  {
-//             return arr.push(elem);
-//         }
-//     }
-// }
+function newArr(arr, arr2) {
+    for ( let i = 0; i < arr.length; i++ ) {
+        if (  Array.isArray(arr[i])) {
+            newArr(arr[i], arr2);
+        } else  {
+            arr2.push(arr[i]);
+        }
+    }
+    return arr2;
+}
 
-// console.log(newArr(arr));
+let arr2 =[];
+console.log(newArr(arr, arr2));
+
+
+
